@@ -2,6 +2,8 @@
 
 #include "ctab.h"
 
+/* this file is a demonstration of the ctab library */
+
 int main() {
 
     int array0[10];
