@@ -1,0 +1,30 @@
+ctab README
+
+The purpose of this library is to provide a simple interface for printing
+neatly formatted tables in C.
+
+Often times it is desirable to print a table of numbers and strings in such a
+way that all the items of each column line up. For example,
+
+Column A   Column B   Column C
+Paul       5          Addison
+Kris       127        Milbridge
+Louis      -4         Harrington
+
+Ensuring that these columns are lined up manually can be very tedious. It
+requires finding the longest item for each column and then printing the
+appropriate number of blanks after each item to ensure that the items in
+the next column line up.
+
+The printt function prints a table containing char *s. The programmer must
+provide the table as a 1-D array of char *s along with the number of rows
+and columns so that the array can be interpreted as a 2-D array.
+
+If the programmer has the data they want to print in arrays corresponding
+to the columns of the table, they can use the contab function to create this
+array of char *s. The format string specifies the data type of each column.
+The number of rows must be specified. The function also requires specification
+of headers for the top of each column. Note: the number of rows does not
+include the row for the headers.
+
+The format string uses 's' for char *s and 'i' for ints.
